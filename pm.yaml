@@ -1,0 +1,14 @@
+---
+plugin_dir: ./build
+
+plugins:
+- name: input_read_fifo
+  disabled: false
+  folder: ./videos
+  repeat: true      # - Not implemented
+  refresh: true     # - Not implemented
+- name: rtsp_server
+  disabled: false
+  port: 5554
+  username: admin
+  proto: tcp
